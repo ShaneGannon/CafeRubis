@@ -67,11 +67,24 @@ void displayProducts()
     rect(l, 6*r, width / 3, height / 10);
     rect(l, 7*r, width / 3, height / 10);
   }
+  
+  //Comments for how i would have completed the menu
+  /* Use a loop to read and write info from the table (name and price) and 
+      using the nf text align align name and price to left and right respectively
+  */
 }
+
+void displayBill()
+{
+  /*would have created a rectangle to hold bill and use the array list to write info 
+    and used a simple addition function of total = total + new for the total of the bill
+   */
+}
+
 
 void draw()
 {
   background(128, 128,128);
-
+  displayBill();
   displayProducts();
 }
