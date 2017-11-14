@@ -48,7 +48,25 @@ void displayProducts()
   text("Cafe Rubis Till System", width / 2, height - (height / 1.1));
   
   //center line
-  line( width / 2, height - (height / 1.2), width / 2, height - (height / 6));
+  float x = 1.2;
+  line( width / 2, height - (height / x), width / 2, height - (height / 8.4));
+  
+  //create table for drinks and prices using a loop
+  int l = width / 8;//box border lhs
+  float r = height / 9;
+  int i = 0;
+  x = 1.2;
+  for(i = 0; i < 7;  i++)
+  fill(255);
+  {
+    rect(l, r, width / 3, height / 10);
+    rect(l, 2*r, width / 3, height / 10);
+    rect(l, 3*r, width / 3, height / 10);
+    rect(l, 4*r, width / 3, height / 10);
+    rect(l, 5*r, width / 3, height / 10);
+    rect(l, 6*r, width / 3, height / 10);
+    rect(l, 7*r, width / 3, height / 10);
+  }
 }
 
 void draw()
