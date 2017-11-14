@@ -40,12 +40,20 @@ void printProducts()
 
 void displayProducts()
 {
-
+  //heading
+  stroke(8);
+  fill(0);
+  textSize(40);
+  textAlign(CENTER, BOTTOM);
+  text("Cafe Rubis Till System", width / 2, height - (height / 1.1));
+  
+  //center line
+  line( width / 2, height - (height / 1.2), width / 2, height - (height / 6));
 }
 
 void draw()
 {
   background(128, 128,128);
-  stroke(0);
+
   displayProducts();
 }
