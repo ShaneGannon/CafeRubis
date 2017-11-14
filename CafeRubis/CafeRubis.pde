@@ -26,7 +26,16 @@ void loadData()
 
 void printProducts()
 {
+  for(Product p:products)
+  {
+    println(p.name);
+  }
   
+  for(int i = 0; i > products.size(); i++)
+    {
+      Product p = products.get(i);
+      println(p.name);
+    }
 }
 
 void displayProducts()
